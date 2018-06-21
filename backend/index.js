@@ -16,8 +16,19 @@ REST = JSON - FEITO // SOAP = XML - FEITO// OQ É MODELO DE API */
 
 
 const express = require('express');
-
+const bodyParser = require
 const app = express();
+
+
+app.get('/', (req, res) => {
+    res.send('hello word');    
+});
+
+
+app.post('/', (req, res) => {
+    res.send('recebi um post');    
+});
+
 
 app.get('/', (req, res) => {
     res.send({
@@ -27,5 +38,6 @@ app.get('/', (req, res) => {
         
     });
 });
+
 
 app.listen(3000);
