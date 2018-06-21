@@ -1,0 +1,1 @@
+console.log(process.argv/*ARGV É ARGUMENTO ele lista a posição e onde estao as coisas na linha do codigo*/);
